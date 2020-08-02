@@ -37,7 +37,7 @@ body{
 		}
 	}
 	.header{
-		background:url("https://i.imgur.com/5igCqPI.jpg") no-repeat center top / cover;
+		background:url("../images/bg-01.jpg") no-repeat center top / cover;
 		min-height:100vh;
 		.header__container{
 			text-align:center;
@@ -256,7 +256,6 @@ body{
 							font-weight:700;
 							text-transform:uppercase;
 							letter-spacing:0.3px;
-							
 							position:relative;
 							&::before{
 								position:absolute;
@@ -267,10 +266,9 @@ body{
 								left:0;
 								transform:traslateY(-100%);
 								transition:all 0.2s ease-in;
-								@include media ('<600px') {
+								@include media ('<=1023px') {
 									transition:none;
 									width:0;
-									height:0;
 								}
 							}
 							&:hover{
@@ -278,7 +276,7 @@ body{
 									transform:translateY(0);
 									height:100%;
 									background-color:#3fc6ea;
-									@include media ('<600px') {
+									@include media ('<=1023px') {
 										height:0;
 									}
 								}
@@ -350,7 +348,7 @@ body{
 								transform:translate(0, 0);
 							}
 						}
-						@include media ('<600px') {
+						@include media ('<=600px') {
 							@keyframes appearing-blocks{
 								display:none;
 							}
@@ -417,6 +415,9 @@ body{
 					transition:all 0.1s ease-in;
 					&:hover{
 						box-shadow:0 0 15px #5a5b5c;
+						@include media ('<=1023px') {
+							box-shadow:none;
+						}
 					}
 					@include media ('<=1023px') {
 						width:25%;
@@ -525,7 +526,7 @@ body{
 		}
 		.container__contact{
 			width:100%;
-			background:url("https://i.imgur.com/6UxtGpy.png") no-repeat 80% top / cover;
+			background:url("../images/bg-02.png") no-repeat 80% top / cover;
 			.contact__block{
 				max-width:1024px;
 				margin:0 auto;
@@ -650,7 +651,6 @@ body{
 							background-color:#e3c712;
 							text-decoration:none;
 							text-align:center;
-							
 							position:relative;
 							overflow:hidden;
 							&::before{
@@ -663,17 +663,16 @@ body{
 								background-color:#3fc6ea;
 								transform:translateX(-100%);
 								transition:all 0.15s ease-in;
-								@include media ('<600px') {
+								@include media ('<=768px') {
 									transition:none;
-									width:0;
 									height:0;
 								}
 								}
 							&:hover{
-								&::before{//address to ::before when parent is active (hover)
+								&::before{
 									transform: translateX(0);
 									width:100%;
-									@include media ('<600px') {
+									@include media ('<=768px') {
 										width:0;
 										height:0;
 									}

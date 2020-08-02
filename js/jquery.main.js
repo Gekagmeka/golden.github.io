@@ -1,4 +1,4 @@
-$('.burger-button, .menu__item').on('click',function(){
+$('.burger-button, .menu__link').on('click',function(){
 	$('.menu__navigation').toggleClass('active');
 	$('.burger-button__first-serif, .burger-button__second-serif, .burger-button__third-serif').toggleClass('active');
 	$('body').toggleClass('lock');
@@ -14,10 +14,6 @@ function appearing(){
 }
 appearing();
 $(window).on('scroll', appearing);
-
-// $(window).on('scroll', function(){
-// 	$('.column__info').addClass('appear');
-// });
 
 function UpArrow(){
 	var scrollTop = $(window).scrollTop();

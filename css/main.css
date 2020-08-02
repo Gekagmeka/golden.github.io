@@ -513,7 +513,7 @@ input[type='submit'] {
     overflow: hidden; } }
 
 body .header {
-  background: url("https://i.imgur.com/5igCqPI.jpg") no-repeat center top/cover;
+  background: url("../images/bg-01.jpg") no-repeat center top/cover;
   min-height: 100vh; }
   body .header .header__container {
     text-align: center;
@@ -757,19 +757,18 @@ body .header {
                     transform: traslateY(-100%);
             -webkit-transition: all 0.2s ease-in;
             transition: all 0.2s ease-in; }
-            @media (max-width: 599px) {
+            @media (max-width: 1023px) {
               body .header .header__container .container__title .title__button .title__link::before {
                 -webkit-transition: none;
                 transition: none;
-                width: 0;
-                height: 0; } }
+                width: 0; } }
           body .header .header__container .container__title .title__button .title__link:hover::before {
             -webkit-transform: translateY(0);
                 -ms-transform: translateY(0);
                     transform: translateY(0);
             height: 100%;
             background-color: #3fc6ea; }
-            @media (max-width: 599px) {
+            @media (max-width: 1023px) {
               body .header .header__container .container__title .title__button .title__link:hover::before {
                 height: 0; } }
           body .header .header__container .container__title .title__button .title__link .title__field {
@@ -846,7 +845,7 @@ body .main .container__services {
   to {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0); } }
-        @media (max-width: 599px) {
+        @media (max-width: 600px) {
           @-webkit-keyframes appearing-blocks {
             display: none; }
           @keyframes appearing-blocks {
@@ -903,6 +902,9 @@ body .main .portfolio-block {
       transition: all 0.1s ease-in; }
       body .main .portfolio-block .container__portfolio .portfolio__album .album__info:hover {
         box-shadow: 0 0 15px #5a5b5c; }
+        @media (max-width: 1023px) {
+          body .main .portfolio-block .container__portfolio .portfolio__album .album__info:hover {
+            box-shadow: none; } }
       @media (max-width: 1023px) {
         body .main .portfolio-block .container__portfolio .portfolio__album .album__info {
           width: 25%;
@@ -999,7 +1001,7 @@ body .main .about-block {
 
 body .main .container__contact {
   width: 100%;
-  background: url("https://i.imgur.com/6UxtGpy.png") no-repeat 80% top/cover; }
+  background: url("../images/bg-02.png") no-repeat 80% top/cover; }
   body .main .container__contact .contact__block {
     max-width: 1024px;
     margin: 0 auto;
@@ -1131,18 +1133,17 @@ body .main .container__contact {
                     transform: translateX(-100%);
             -webkit-transition: all 0.15s ease-in;
             transition: all 0.15s ease-in; }
-            @media (max-width: 599px) {
+            @media (max-width: 768px) {
               body .main .container__contact .contact__block .contact__info .contact__button .contact__link::before {
                 -webkit-transition: none;
                 transition: none;
-                width: 0;
                 height: 0; } }
           body .main .container__contact .contact__block .contact__info .contact__button .contact__link:hover::before {
             -webkit-transform: translateX(0);
                 -ms-transform: translateX(0);
                     transform: translateX(0);
             width: 100%; }
-            @media (max-width: 599px) {
+            @media (max-width: 768px) {
               body .main .container__contact .contact__block .contact__info .contact__button .contact__link:hover::before {
                 width: 0;
                 height: 0; } }
